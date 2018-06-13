@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head><title>Flask with Jinja</title></head>
+	<body> 
+		<ul>
+			<li><img src="{{url_for('static',filename='1.jfif')}}"></li>
+			{#This is comment block .We will set some variables in the jinja remplate.#}
+			{% set name="Htet Htet Htun"%}
+			{%set user_name="htethtethtunjewel"%}
+			<li>{{name}}</li>
+			<li><a href="http://github.com/{{user_name}}">GitHub</li>
+			<li><a href="http://{{user_name}}.herokuapp.com">Heroku</li>
+		</ul>
+	
+	</body>
+</html>
